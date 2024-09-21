@@ -14,8 +14,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a fourth-year Ph.D. student in the [Aeronautics & Astronautics Department at the University of Washington](https://www.aa.washington.edu/), working with the [Autonomous Controls Laboratory](https://uwacl.com/) under Dr. Behçet Açıkmeşe. My research investigates are divided between developing practical, real-time numerical algorithms and applying them to relevant real-world scenarios in aerospace engineering and, more broadly, in autonomous systems. This constitutes:
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+* **Convex Optimization** *(Convex Approximation Methods)*
+* **Real-Time Trajectory Optimization** *(Sequential Convex Programming)*
+* **Perception-In-The-Loop Planning** *(Active Navigation)*
+* **Main Applications:**
+    * **Rocketry:** Powered Descent Guidance, Rendezvous Maneuvers
+    * **Aerial Vehicles:** Multirotors, eVTOLs
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Academically, I graduated *Summa Cum Laude* from the University of Florida with a B.S. in Aerospace Engineering (2020), and am the recipient of both the NSF GRFP and ARCS fellowships for graduate research. Professionally, I have spent six rotations working with [NASA](https://www.nasa.gov/) as a [Pathways Co-Op](https://www.nasa.gov/careers/pathways/), as well as two internships in the spaceflight industry with [Blue Origin](https://www.blueorigin.com/). Have a look through my website to learn more!

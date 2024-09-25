@@ -29,6 +29,6 @@ I conducted in-depth trade studies for these algorithms and their performance, r
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://www.youtube.com/watch?v=1_FXVjf46T8&t=13s&ab_channel=SpaceX" muted autoplay loop class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://www.youtube.com/watch?v=1_FXVjf46T8&t=13s&ab_channel=SpaceX" %}
     </div>
 </div>

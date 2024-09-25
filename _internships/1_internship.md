@@ -10,9 +10,25 @@ related_publications: false
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="asset/media/internships/NASA_JSC_EG4/demo_thin.png" title="tmp" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="asset/media/internships/NASA_JSC_EG4/demo_thin.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Simulation snippet taken during Monte-Carlo outlier analysis
+</div>
+
+**Overview**
+In the Fall of 2018, I assisted the NASA CCP (Commercial Crew Program) with integrated GN&C analysis for the SpaceX Crew Dragon. The work focused on the oncoming implementation of new GN&C algorithms for the ascent LAS (launch abort system) in early atmospheric flight.
+
+**Contributions**
+I conducted in-depth trade studies for these algorithms and their performance, relative to their predecessors, in NASA’s (Unix-based) 6-DOF Trick simulation environment, and further developed various MATLAB/C++ unit tests and debugged various problems in the simulation source code. Handoff results were used by other GN&C teams and targeted quantifiable understanding of underlying mathematical relations and their influence on the vehicle’s overall trajectory and design parameters including aerodynamic, propulsive, structural, etc.
+
+**Timed parachute deployment** algorithms were analyzed both in controlled, independent simulations and Monte-Carlo (MC) dispersion analysis. The latter revealed potential hardware failure scenarios in off-nominal cases. Custom Python data processing and analysis tools were also developed for this task, the next task and general use in EG4.
+
+**Linear-Optimized Control Allocation** algorithms were also analyzed, looking deep into the impact and interrelated dependencies of weighting parameters on flight performance. Numerous weight sets were fine-tuned for a variety of different use-cases. Detailed comparison across the entire flight regime was also made relative to the previous method which used more traditional control allocation logic.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://www.youtube.com/watch?v=1_FXVjf46T8&t=13s&ab_channel=SpaceX" muted autoplay loop class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>

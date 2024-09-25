@@ -10,11 +10,8 @@ related_publications: false
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="asset/media/internships/NASA_JSC_EG4/demo_thin.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/media/internships/NASA_JSC_EG4/demo_thin.png" class="img-fluid rounded z-depth-1" caption="Simulation snippet taken during Monte-Carlo outlier analysis" %}
     </div>
-</div>
-<div class="caption">
-    Simulation snippet taken during Monte-Carlo outlier analysis
 </div>
 
 **Overview**
@@ -29,6 +26,9 @@ I conducted in-depth trade studies for these algorithms and their performance, r
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://www.youtube.com/watch?v=1_FXVjf46T8&t=13s&ab_channel=SpaceX" %}
+        {% include video.liquid path="https://www.youtube.com/embed/1_FXVjf46T8" caption="SpaceX Crew Dragon – Pad Abort Test" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://www.youtube.com/embed/mu5Ydz34oVc" caption="SpaceX Crew Dragon – In-Flight Abort Test (IFA)" %}
     </div>
 </div>

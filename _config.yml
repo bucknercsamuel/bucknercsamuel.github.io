@@ -197,6 +197,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  internships:
+    output: true
+    permalink: /:collection/:title/
 
 announcements:
   enabled: false

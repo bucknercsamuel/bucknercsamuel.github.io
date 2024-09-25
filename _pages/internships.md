@@ -5,7 +5,7 @@ permalink: /internships/
 description: Internship experiences at both the undergraduate and graduate level.
 nav: true
 nav_order: 2
-display_categories: [2018,2019,2020,2021,2022,2023,2024]
+display_categories: [2023,2022,2021,2020,2019,2018]
 horizontal: false
 ---
 

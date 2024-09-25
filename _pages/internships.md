@@ -1,11 +1,15 @@
 ---
 layout: page
-title: internships
+title: Internships
 permalink: /internships/
-description: Internship experiences at both the undergraduate and graduate level.
+description: >
+   Internship experiences at both the undergraduate and graduate level. This includes:
+   - Seven internships with **NASA** (various centers)
+   - Two internships with **Blue Origin**
+   *(All media shown has been approved for public distribution)*
 nav: true
 nav_order: 2
-display_categories: [2023,2022,2021,2020,2019,2018]
+display_categories: [2024,2023,2022,2021,2020,2019,2018]
 horizontal: false
 ---
 

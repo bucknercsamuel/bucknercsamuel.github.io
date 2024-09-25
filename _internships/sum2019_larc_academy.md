@@ -23,7 +23,7 @@ I developed a multithreaded Python architecture for multi-UAS mission management
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/media/internships/NASA_LaRC_Academy/demo.png"
-        autoplay muted loop class="img-fluid rounded z-depth-1" caption="Time-lapse of simulated pizza deliveries to a local neighborhood" %}
+        autoplay=true muted=true loop=true class="img-fluid rounded z-depth-1" caption="Time-lapse of simulated pizza deliveries to a local neighborhood" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/media/internships/NASA_LaRC_Academy/aiaa_cropped.png" class="img-fluid rounded z-depth-1" caption="Presenting at the 2020 AIAA Sci-Tech Conference" %}

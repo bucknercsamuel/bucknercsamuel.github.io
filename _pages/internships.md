@@ -11,7 +11,7 @@ horizontal: false
 
 <!-- pages/internships.md -->
 <div class="internships">
-{% if site.enable_project_categories and page.display_categories %}
+{% if site.enable_internship_categories and page.display_categories %}
   <!-- Display categorized internships -->
   {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">
@@ -19,18 +19,18 @@ horizontal: false
   </a>
   {% assign categorized_internships = site.internships | where: "category", category %}
   {% assign sorted_internships = categorized_internships | sort: "importance" %}
-  <!-- Generate cards for each project -->
+  <!-- Generate cards for each internship -->
   {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_internships %}
+    {% for internship in sorted_internships %}
       {% include internships_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_internships %}
+    {% for internship in sorted_internships %}
       {% include internships.liquid %}
     {% endfor %}
   </div>
@@ -43,20 +43,20 @@ horizontal: false
 
 {% assign sorted_internships = site.internships | sort: "importance" %}
 
-  <!-- Generate cards for each project -->
+  <!-- Generate cards for each internship -->
 
 {% if page.horizontal %}
 
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_internships %}
+    {% for internship in sorted_internships %}
       {% include internships_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_internships %}
+    {% for internship in sorted_internships %}
       {% include internships.liquid %}
     {% endfor %}
   </div>

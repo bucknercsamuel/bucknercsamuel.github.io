@@ -34,7 +34,6 @@ For my second Pathways tour, I worked with the COMPASS (Core Operations, Mission
             <li> Accurate vehicle mass characteristics and propulsion configuration </li>
             <li> New tools for orbital insertion and propagation simulation and analysis </li>
         </ol>
-        Furthermore, I assisted with development of custom graphics and visualization libraries suited for the software limitations that the COMPASS team had to deal with. As a side task, I also helped develop an IIP (instantaneous impact point) trajectory propagation tool to support vehicle ascent analysis for the FDO flight control team. More information on COMPASS can be found here.
         <br>
     </div>
     <div class="col-sm mt-3 mt-md-0">
@@ -44,6 +43,8 @@ For my second Pathways tour, I worked with the COMPASS (Core Operations, Mission
             loading="eager" class="img-fluid rounded z-depth-1"%}
     </div>
 </div>
+
+Furthermore, I assisted with development of custom graphics and visualization libraries suited for the software limitations that the COMPASS team had to deal with. As a side task, I also helped develop an IIP (instantaneous impact point) trajectory propagation tool to support vehicle ascent analysis for the FDO flight control team.
 
 <div class="row">
     <div class="col-sm-1 mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->

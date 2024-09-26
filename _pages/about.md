@@ -14,7 +14,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a fourth-year Ph.D. student in the [Aeronautics & Astronautics Department at the University of Washington](https://www.aa.washington.edu/), working with the [Autonomous Controls Laboratory](https://uwacl.com/) under Dr. Behçet Açıkmeşe. My research investigates are divided between developing practical, real-time numerical algorithms and applying them to relevant real-world scenarios in aerospace engineering and, more broadly, in autonomous systems. This constitutes:
+I am a fourth-year Ph.D. student in the [Aeronautics & Astronautics Department at the University of Washington](https://www.aa.washington.edu/), working with the [Autonomous Controls Laboratory](https://uwacl.com/) under Dr. Behçet Açıkmeşe. My research interests are divided between developing practical, real-time numerical algorithms and applying them to relevant real-world scenarios in aerospace engineering and, more broadly, in autonomous systems. This constitutes:
 
 * **Convex Optimization** *(Convex Approximation Methods)*
 * **Real-Time Trajectory Optimization** *(Sequential Convex Programming)*

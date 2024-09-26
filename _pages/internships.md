@@ -9,7 +9,7 @@ description: >
    *(All media shown has been approved for public distribution)*
 nav: true
 nav_order: 2
-display_categories: [2024,2023,2022,2021,2020,2019,2018]
+display_categories: [Graduate,Undergraduate]
 horizontal: false
 ---
 

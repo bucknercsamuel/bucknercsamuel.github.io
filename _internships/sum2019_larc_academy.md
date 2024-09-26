@@ -59,7 +59,7 @@ As a side-task for Fit2Fly, I also worked on computational methods for identifyi
 </div>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-7 mt-3 mt-md-0">
         {% include video.liquid 
             path="assets/media/internships/NASA_LaRC_Academy/binary_blob.mp4"
             caption="Binary blob detection validation test"

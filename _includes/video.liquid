@@ -64,7 +64,7 @@
       {% if include.width %}
         width="{{ include.width }}"
       {% else %}
-        width="auto"
+        width="100%"
       {% endif %}
       {% if include.height %}
         height="{{ include.height }}"
@@ -88,6 +88,18 @@
       {% endif %}
       {% if include.title %}
         title="{{ include.title }}"
+      {% endif %}
+      {% if include.autoplay %}
+        autoplay
+      {% endif %}
+      {% if include.controls %}
+        controls
+      {% endif %}
+      {% if include.loop %}
+        loop
+      {% endif %}
+      {% if include.muted %}
+        muted
       {% endif %}
     />
   {% endif %}

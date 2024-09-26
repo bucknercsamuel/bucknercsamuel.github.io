@@ -51,7 +51,7 @@ Furthermore, I assisted with development of custom graphics and visualization li
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/internships/NASA_JSC_CM451/JPL2.png"
-            loading="eager" class="img-fluid rounded z-depth-1"%}
+            loading="eager" class="img-fluid"%}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid 

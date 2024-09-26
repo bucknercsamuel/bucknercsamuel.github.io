@@ -25,7 +25,7 @@ I developed a multithreaded Python architecture for multi-UAS mission management
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/media/internships/NASA_LaRC_Academy/demo.mp4"
-        autoplay=true muted=true loop=true caption="Time-lapse of simulated pizza deliveries to a local neighborhood" %}
+        autoplay=true muted=true loop=true controls=true width=450px caption="Time-lapse of simulated pizza deliveries to a local neighborhood" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/media/internships/NASA_LaRC_Academy/aiaa_cropped.jpeg" class="img-fluid rounded z-depth-1" caption="Presenting at the 2020 AIAA Sci-Tech Conference" %}
@@ -43,10 +43,10 @@ As a side-task for Fit2Fly, I also worked on computational methods for identifyi
         </b>
 
         This first approach saturated values to binary one or zero based on whether signal strength had exceeded a given threshold or not. Large enough clusters of ones were identified in real time as frequency hops and marked with red circles for visualization as seen in the below waterfall plot (tested on SRD-280 radio transmitters with an RF explorer spectrum analyzer). While computationally fast and efficient, this method showed possible unreliability with complex patterns and sensor noise, leading to investment in method #2.
-        <div class="col-sm mt-3 mt-md-0">
+        <!-- <div class="col-sm mt-3 mt-md-0">
             {% include video.liquid path="assets/media/internships/NASA_LaRC_Academy/binary_blob.mp4"
             autoplay=true muted=true loop=true caption="Binary blob detection validation test" %}
-        </div>
+        </div> -->
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <b> 

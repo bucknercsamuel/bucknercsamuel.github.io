@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lunar Lander Trajectory Simulation Intern
+title: Lunar Lander Trajectory Simulation
 description: NASA Johnson Space Center (Spring 2020, Pathways Program)
 img: assets/media/internships/NASA_JSC_CM451/cover.png
 importance: 1

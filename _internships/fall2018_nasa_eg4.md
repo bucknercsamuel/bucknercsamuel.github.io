@@ -27,7 +27,7 @@ I conducted in-depth trade studies for these algorithms and their performance, r
 
 **Timed parachute deployment** algorithms were analyzed both in controlled, independent simulations and Monte-Carlo (MC) dispersion analysis. The latter revealed potential hardware failure scenarios in off-nominal cases. Custom Python data processing and analysis tools were also developed for this task, the next task and general use in EG4.
 
-**Linear-Optimized Control Allocation** algorithms were also analyzed, looking deep into the impact and interrelated dependencies of weighting parameters on flight performance. Numerous weight sets were fine-tuned for a variety of different use-cases. Detailed comparison across the entire flight regime was also made relative to the previous method which used more traditional control allocation logic.
+**Linear-Optimized Control Allocation** algorithms were also analyzed, looking deep into the impact and interrelated dependencies of weighting parameters on flight performance. Numerous weight sets were fine-tuned for a variety of different use-cases. Detailed comparison across the entire flight regime was also made relative to the previous method which used a more traditional control allocation logic.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

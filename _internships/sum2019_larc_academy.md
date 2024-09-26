@@ -46,17 +46,17 @@ As a side-task for Fit2Fly, I also worked on computational methods for identifyi
         <b> 
             Method #1: Binary Blob Detection 
         </b>
-        \n
+        <br>
         This first approach saturated values to binary one or zero based on whether signal strength had exceeded a given threshold or not. Large enough clusters of ones were identified in real time as frequency hops and marked with red circles for visualization as seen in the below waterfall plot (tested on SRD-280 radio transmitters with an RF explorer spectrum analyzer). While computationally fast and efficient, this method showed possible unreliability with complex patterns and sensor noise, leading to investment in method #2.
-        \n
+        <br>
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <b> 
             Method #2: Image Classification
         </b>
-        \n
+        <br>
         For more robust FHSS identification, image classification (machine learning) with PyTorch was selected as a possible solution. Simulated data with random noise was developed for large data-set validation, with select augmentations used including random cropping, center cropping and resizing. A prediction accuracy of 98% was found, with a sample set shown below, although this method has yet to be implemented in real-time with the SRD-280 radio transmitters due to time constraints.
-        \n
+        <br>
     </div>
 </div>
 

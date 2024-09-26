@@ -24,7 +24,7 @@ I developed a multithreaded Python architecture for multi-UAS mission management
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/media/internships/NASA_LaRC_Academy/demo.png"
+        {% include video.liquid path="assets/media/internships/NASA_LaRC_Academy/demo.mp4"
         autoplay=true muted=true loop=true caption="Time-lapse of simulated pizza deliveries to a local neighborhood" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">

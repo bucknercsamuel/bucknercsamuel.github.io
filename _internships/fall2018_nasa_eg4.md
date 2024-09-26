@@ -15,9 +15,11 @@ related_publications: false
 </div>
 
 **Overview**
+
 In the Fall of 2018, I assisted the NASA CCP (Commercial Crew Program) with integrated GN&C analysis for the SpaceX Crew Dragon. The work focused on the oncoming implementation of new GN&C algorithms for the ascent LAS (launch abort system) in early atmospheric flight.
 
 **Contributions**
+
 I conducted in-depth trade studies for these algorithms and their performance, relative to their predecessors, in NASA’s (Unix-based) 6-DOF Trick simulation environment, and further developed various MATLAB/C++ unit tests and debugged various problems in the simulation source code. Handoff results were used by other GN&C teams and targeted quantifiable understanding of underlying mathematical relations and their influence on the vehicle’s overall trajectory and design parameters including aerodynamic, propulsive, structural, etc.
 
 **Timed parachute deployment** algorithms were analyzed both in controlled, independent simulations and Monte-Carlo (MC) dispersion analysis. The latter revealed potential hardware failure scenarios in off-nominal cases. Custom Python data processing and analysis tools were also developed for this task, the next task and general use in EG4.

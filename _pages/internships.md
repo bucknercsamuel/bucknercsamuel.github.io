@@ -10,7 +10,9 @@ horizontal: false
 ---
 
 <p style="text-align:center;">
-  *(All media shown has been approved for public distribution)*
+  <i>
+    (All media shown has been approved for public distribution)
+  </i>
 </p>
 
 <!-- pages/internships.md -->

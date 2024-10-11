@@ -2,16 +2,16 @@
 layout: page
 title: Internships
 permalink: /internships/
-description: >
-   Internship experiences at both the undergraduate and graduate level. This includes:
-   - Seven internships with **NASA** (various centers)
-   - Two internships with **Blue Origin**
-   *(All media shown has been approved for public distribution)*
+description: Internship experiences at both the undergraduate and graduate level. 
 nav: true
 nav_order: 2
 display_categories: [Graduate,Undergraduate]
 horizontal: false
 ---
+
+<p style="text-align:center;">
+  *(All media shown has been approved for public distribution)*
+</p>
 
 <!-- pages/internships.md -->
 <div class="internships">

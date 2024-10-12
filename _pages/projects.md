@@ -5,7 +5,7 @@ permalink: /projects/
 description: A growing collection of both research and hobby projects.
 nav: true
 nav_order: 3
-display_categories: [Research Projects,Hobby Projects]
+display_categories: [Research,Hobby]
 horizontal: false
 ---
 

@@ -5,7 +5,7 @@ description: NASA Johnson Space Center (Summer 2023, Pathways Program)
 img: assets/media/internships/NASA_JSC_EG5_tour2/cover.png
 importance: 1
 category: Graduate
-related_publications: false
+related_publications: true
 ---
 
 This tour consisted of three different high-level tasks:

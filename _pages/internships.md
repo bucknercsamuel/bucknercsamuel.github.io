@@ -9,7 +9,7 @@ display_categories: [Graduate,Undergraduate]
 horizontal: false
 ---
 
-<p style="text-align:center;">
+<p style="text-align:center;font-size:50%;">
   <i>
     (All media shown has been approved for public distribution)
   </i>

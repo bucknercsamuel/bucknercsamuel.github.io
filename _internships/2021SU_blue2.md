@@ -15,7 +15,7 @@ During this internship, I worked with the New Glenn navigation team to apply the
     <li> Implemented new uplink data compression methods and assessed model noise sensitivity </li>
     <li> Conducted three-sigma performance assessments to verify operational reliability </li>
 </ol>
-
+<br/>
 <div class="row">
     <div class="col-sm-1 mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
     <div class="col-sm-8 mt-3 mt-md-0">

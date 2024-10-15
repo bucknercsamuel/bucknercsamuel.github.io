@@ -42,7 +42,7 @@ Both of these models were developed as part of my 2023 rotation at the NASA John
     <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
     <div class="col-sm-7 mt-3 mt-md-0">
         {% include video.liquid 
-            path="assets/media/projects/research/cvg_demo.mp4"
+            path="assets\media\projects\research\CVG\cvg_demo.mp4"
             caption="CVG demo of a landing maneuver with three terrain scanning events (for three separate regions of interest)"
             autoplay=true muted=true loop=true controls=true %}
     </div>
@@ -53,12 +53,12 @@ Both of these models were developed as part of my 2023 rotation at the NASA John
 ### 3-DoF LCvx Approach
 
 While it is relatively natural to express a coupled translational/rotational constraint in a 6-DoF formulation, there are additional challenges for a restricted 3-DoF model. We would instead like to determine **the constraint set defined purely in vehicle position and thrust space (assuming a non-gimbaled engine) that guarantees existence of an attitude configuration which satisfies full visibility of the region of interest**. 
-<br/>
-It can be shown that this set, defined as the **C**ontrol **R**obust **E**nvelope (**CRE**), can be parameterized by convex second-order cones (SOCs) in both the vehicle's position and its thrust vector. This enables these constraints to be amenable to existing convex formulations for the powered descent guidance problem, notably the LCvx formulation, which provides a numerically-efficient implementation while still providing visibility guarantees.
+<br/><br/>
+It can be shown that this set, defined as the **C**ontrol **R**obust **E**nvelope (**CRE**), can be parameterized by convex second-order cones (SOCs) in both the vehicle's position and its thrust vector. This enables these constraints to be amenable to existing convex formulations for the powered descent guidance problem, notably the LCvx formulation, which provides a numerically-efficient implementation while still providing visibility guarantees. This work makes use of the theory developed in the 6-DoF SCP approach, with additional contributions for other constrained conic intersection definitions necessary for construction of the resulting constraint set.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm-7 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/projects/research/CVG/CRE.png"
             caption="Geometric visualization of the CRE -- the blue cone represents the positional constraint, and the orange cone represents the thrust constraint. The green cone represents the vehicle's FOV cone."

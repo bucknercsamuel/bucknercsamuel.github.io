@@ -82,7 +82,7 @@ In the aerospace domain, autonomous systems are typically defined by three core 
         <b>[CVG: Constrained Visibility Guidance](https://bucknercsamuel.github.io/projects/CVG/)</b>
     </div>
     <div class="col-md mt-3 mt-md-0">
-        <b>[ROS-Based Flight Software for the D3 CubeSat Mission](https://bucknercsamuel.github.io/projects/BranchSCvx/)</b>
+        <b>[ROS-Based Flight Software for the D3 CubeSat Mission](https://bucknercsamuel.github.io/projects/D3Sat/)</b>
     </div>
 </div>
 <br/><br/>

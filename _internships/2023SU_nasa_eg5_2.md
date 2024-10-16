@@ -16,3 +16,5 @@ This tour consisted of three different high-level tasks:
 </ol>
 
 This tour resulted in several conference publications at SciTech 2024: {% cite buckner2024constrained %} and {% cite shaffer2024implementation %}, with one formulation being selected for flight implementation on a future lunar landing mission.
+
+For a more detailed overview of the research produced by this internship, please see my [page on CVG](https://bucknercsamuel.github.io/projects/CVG/).

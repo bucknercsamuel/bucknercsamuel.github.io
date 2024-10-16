@@ -40,7 +40,7 @@ Both of these models were developed as part of my 2023 rotation at the NASA John
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
-    <div class="col-sm-7 mt-3 mt-md-0">
+    <div class="col-sm-9 mt-3 mt-md-0">
         {% include video.liquid 
             path="assets/media/projects/research/CVG/cvg_demo.mp4"
             caption="CVG demo of a landing maneuver with three terrain scanning events (for three separate regions of interest)"

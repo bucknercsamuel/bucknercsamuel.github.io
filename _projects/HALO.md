@@ -35,7 +35,7 @@ Modeling of the Adaptive-DDTO algorithm can be decomposed into three steps:
         {% include video.liquid 
             path="https://www.youtube.com/embed/KqCXGDTntDU" 
             caption="Demonstration of the HALO framework applied to a quadrotor landing in a martian terrain environment" 
-            autoplay=true muted=true loop=true controls=true %}
+            autoplay=true muted=true loop=true controls=true height=720px%}
     </div>
     <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
 </div>

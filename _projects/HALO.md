@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HALO (Hazard-Aware Landing Optimization)
-description: SciTech 2024
+description: ICRA 2023
 img: assets/img/publication_preview/hayner2023halo.png
 importance: 1
 category: Research
@@ -9,7 +9,7 @@ related_publications: true
 ---
 
 
-**H**azard **A**ware **L**anding **O**ptimization (**HALO**) presents a combined perception (HALSS) and trajectory planning (Adaptive-DDTO) solution towards contingency planning for landing maneuvers with multiple candidate landing sites. This was an equal contribution research project between coauthor Chris Hayner and myself, published and presented at ICRA 2024 {% cite hayner2024halo %}, where I was primarily responsible for the Adaptive-DDTO algorithm development and implementation.
+**H**azard **A**ware **L**anding **O**ptimization (**HALO**) presents a combined perception (HALSS) and trajectory planning (Adaptive-DDTO) solution towards contingency planning for landing maneuvers with multiple candidate landing sites. This was an equal contribution research project between coauthor Chris Hayner and myself, published and presented at ICRA 2024 {% cite hayner2023halo %}, where I was primarily responsible for the Adaptive-DDTO algorithm development and implementation.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->

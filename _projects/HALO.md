@@ -12,14 +12,14 @@ related_publications: true
 **H**azard **A**ware **L**anding **O**ptimization (**HALO**) presents a combined perception (HALSS) and trajectory planning (Adaptive-DDTO) solution towards contingency planning for landing maneuvers with multiple candidate landing sites. This was an equal contribution research project between coauthor Chris Hayner and myself, published and presented at ICRA 2024 {% cite hayner2023halo %}, where I was primarily responsible for the Adaptive-DDTO algorithm development and implementation.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
-    <div class="col-sm-9 mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md-9 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/projects/research/HALO/addto.png"
             caption="Visual illustration of the three-part modeling process for Adaptive-DDTO in a quadrotor landing context with multiple candidate landing sites"
             loading="eager" class="img-fluid rounded z-depth-1"%}
     </div>
-    <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
 </div>
 
 Modeling of the Adaptive-DDTO algorithm can be decomposed into three steps:
@@ -30,12 +30,12 @@ Modeling of the Adaptive-DDTO algorithm can be decomposed into three steps:
 </ol>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
-    <div class="col-sm-9 mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md-9 mt-3 mt-md-0">
         {% include video.liquid 
             path="https://www.youtube.com/embed/KqCXGDTntDU?&autoplay=1&mute=1" 
             caption="Demonstration of the HALO framework applied to a quadrotor landing in a martian terrain environment" 
             height="300" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
 </div>

@@ -33,13 +33,13 @@ During my undergraduate degree, I worked off-and-on on a project to develop a VT
 The system is designed to be 6-DOF capable, with a gimbaled nozzle for pitch/yaw control and two fins located directly below the EDF for roll control. A four-bar linkage solution to the nozzle-servo kinematics was derived and modeled in MATLAB and fed into the C-based flight software for precise servo-to-nozzle actuation mapping. A prototype test-stand was 3D-printed and assembled to test nozzle actuation in response to IMU readings. Precise motion has been confirmed at a maximum deflection angle of 24 degrees, however further design and analysis is desired before moving to the flight-ready prototype.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">
         {% include video.liquid 
             path="assets/media/projects/hobby/VTOL/FourBarLinkage.mp4"
             caption="MATLAB nozzle-servo kinematic simulation"
             autoplay=true muted=true loop=true controls=true %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">
         {% include video.liquid 
             path="assets/media/projects/hobby/VTOL/sweeptest.mp4"
             caption="Nozzle square-sweep motion demonstration"

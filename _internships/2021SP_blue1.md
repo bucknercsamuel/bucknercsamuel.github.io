@@ -17,11 +17,11 @@ During this internship, I worked with the New Glenn fluids control team to chara
 </ol>
 <br/>
 <div class="row">
-    <div class="col-sm-1 mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-md-1 mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md-8 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/internships/BlueOrigin_tour1/New_Glenn.png"
             loading="eager" class="img-fluid"%}
     </div>
-    <div class="col-sm-1 mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md-1 mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
 </div>

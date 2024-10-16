@@ -9,7 +9,7 @@ related_publications: false
 ---
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/internships/NASA_JSC_EG4/demo_thin.png"
             caption="Simulation snippet taken during Monte-Carlo outlier analysis"
@@ -30,13 +30,13 @@ I conducted in-depth trade studies for these algorithms and their performance, r
 **Linear-Optimized Control Allocation** algorithms were also analyzed, looking deep into the impact and interrelated dependencies of weighting parameters on flight performance. Numerous weight sets were fine-tuned for a variety of different use-cases. Detailed comparison across the entire flight regime was also made relative to the previous method which used a more traditional control allocation logic.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">
         {% include video.liquid
             path="https://www.youtube.com/embed/1_FXVjf46T8?&autoplay=1&mute=1" 
             caption="SpaceX Crew Dragon – Pad Abort Test"
             height="200" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">
         {% include video.liquid 
             path="https://www.youtube.com/embed/mu5Ydz34oVc?&autoplay=1&mute=1" 
             caption="SpaceX Crew Dragon – In-Flight Abort Test (IFA)"

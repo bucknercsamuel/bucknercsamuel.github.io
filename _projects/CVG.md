@@ -20,7 +20,7 @@ Both of these models were developed as part of my 2023 rotation at the NASA John
 ### 6-DoF SCP Approach
 
 <div class="row">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-md-6 mt-3 mt-md-0">
         The objective of CVG is to model a constraint which restricts the field of view (FOV) of an onboard perception sensor -- typically parameterized by a cone about the sensor's pointing direction -- to obtain full coverage of a circular region of interest on the ground. Contributions of this work included:
         <ol>
             <li> Definition of a 6-DoF constraint set (position + quaternion attitude) that guarantees FOV capture of this region of interest with arbitrary centroid location and radius. </li>
@@ -30,7 +30,7 @@ Both of these models were developed as part of my 2023 rotation at the NASA John
         </ol>
         <br>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/projects/research/CVG/CVG_illustration.png"
             caption="Diagram visually showing the main theoretical result"
@@ -39,14 +39,14 @@ Both of these models were developed as part of my 2023 rotation at the NASA John
 </div>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
-    <div class="col-sm-9 mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md-9 mt-3 mt-md-0">
         {% include video.liquid 
             path="assets/media/projects/research/CVG/cvg_demo.mp4"
             caption="CVG demo of a landing maneuver with three terrain scanning events (for three separate regions of interest)"
             autoplay=true muted=true loop=true controls=true %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
 </div>
 <br/><br/>
 
@@ -57,12 +57,12 @@ While it is relatively natural to express a coupled translational/rotational con
 It can be shown that this set, defined as the **C**ontrol **R**obust **E**nvelope (**CRE**), can be parameterized by convex second-order cones (SOCs) in both the vehicle's position and its thrust vector. This enables these constraints to be amenable to existing convex formulations for the powered descent guidance problem, notably the LCvx formulation, which provides a numerically-efficient implementation while still providing visibility guarantees. This work makes use of the theory developed in the 6-DoF SCP approach, with additional contributions for other constrained conic intersection definitions necessary for construction of the resulting constraint set.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
-    <div class="col-sm-7 mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md-7 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/projects/research/CVG/CRE.png"
             caption="Geometric visualization of the CRE -- the blue cone represents the positional constraint, and the orange cone represents the thrust constraint. The green cone represents the vehicle's FOV cone."
             loading="eager" class="img-fluid rounded z-depth-1"%}
     </div>
-    <div class="col-sm mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
 </div>

@@ -32,14 +32,12 @@ I conducted in-depth trade studies for these algorithms and their performance, r
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid
-            path="https://www.youtube.com/embed/1_FXVjf46T8" 
-            caption="SpaceX Crew Dragon – Pad Abort Test" 
-            autoplay=true muted=true loop=true controls=true %}
+            path="https://www.youtube.com/embed/1_FXVjf46T8&autoplay=1" 
+            caption="SpaceX Crew Dragon – Pad Abort Test" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid 
-            path="https://www.youtube.com/embed/mu5Ydz34oVc" 
-            caption="SpaceX Crew Dragon – In-Flight Abort Test (IFA)" 
-            autoplay=true muted=true loop=true controls=true %}
+            path="https://www.youtube.com/embed/mu5Ydz34oVc&autoplay=1" 
+            caption="SpaceX Crew Dragon – In-Flight Abort Test (IFA)" %}
     </div>
 </div>

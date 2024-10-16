@@ -25,7 +25,7 @@ related_publications: true
 Modeling of the Adaptive-DDTO algorithm can be decomposed into three steps:
 <ol>
     <li> Definition of necessary path constraints, boundary conditions and objective for the single-target optimal control problem.</li>
-    <li> Extension to a multi-target scenario with the objective to maximize the time within which all targets are reachable (known in the literature as [Deferred Decision Trajectory Optimization / DDTO](https://arc.aiaa.org/doi/abs/10.2514/6.2022-1583)).</li>
+    <li> Extension to a multi-target scenario with the objective to maximize the time within which all targets are reachable (known in the literature as [Deferred Decision Trajectory Optimization (DDTO)](https://arc.aiaa.org/doi/abs/10.2514/6.2022-1583)).</li>
     <li> Extension to Adaptive-DDTO through an algorithm to adaptively recompute solutions <i>as needed</i> (whenever number of targets falls below an acceptable threshold).</li>
 </ol>
 

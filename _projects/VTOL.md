@@ -17,12 +17,12 @@ During my undergraduate degree, I worked off-and-on on a project to develop a VT
 </ol>
 
 <div class="row">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-md-6 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/projects/hobby/VTOL/models_sw.png"
             loading="eager" class="img-fluid"%}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-md mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/projects/hobby/VTOL/prototype.jpg"
             caption="Test Model Hardware Prototype"
@@ -35,13 +35,13 @@ The system is designed to be 6-DOF capable, with a gimbaled nozzle for pitch/yaw
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid 
-            path="assets/media/projects/research/CVG/FourBarLinkage.mp4"
+            path="assets/media/projects/hobby/VTOL/FourBarLinkage.mp4"
             caption="MATLAB nozzle-servo kinematic simulation"
             autoplay=true muted=true loop=true controls=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid 
-            path="assets/media/projects/research/CVG/sweeptest.mp4"
+            path="assets/media/projects/hobby/VTOL/sweeptest.mp4"
             caption="Nozzle square-sweep motion demonstration"
             autoplay=true muted=true loop=true controls=true %}
     </div>

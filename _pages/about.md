@@ -46,21 +46,21 @@ In the aerospace domain, autonomous systems are typically defined by three core 
 <div class="row">
     <div class="col-md mt-3 mt-md-0">
         {% include video.liquid 
-            path="https://www.youtube.com/embed/KqCXGDTntDU?&autoplay=1&mute=1" 
+            path="https://www.youtube.com/embed/KqCXGDTntDU?&autoplay=1&mute=1&loop=1" 
             height="300" %}
     </div>
     <div class="col-md mt-3 mt-md-0">
         {% include video.liquid 
-            path="https://www.youtube.com/embed/Ak2Vc9rGHHw?&autoplay=1&mute=1" 
+            path="https://www.youtube.com/embed/Ak2Vc9rGHHw?&autoplay=1&mute=1&loop=1" 
             height="300" %}
     </div>
 </div>
 <div class="row">
     <div class="col-md mt-3 mt-md-0">
-        <b>[HALO: Hazard-Aware Landing Optimization](https://bucknercsamuel.github.io/projects/HALO/)</b>
+        <b><a href="https://bucknercsamuel.github.io/projects/HALO/">HALO: Hazard-Aware Landing Optimization</a></b>
     </div>
     <div class="col-md mt-3 mt-md-0">
-        <b>[Branch-SCvx: Branch Successive Convexification](https://bucknercsamuel.github.io/projects/BranchSCvx/)</b>
+        <b><a href="https://bucknercsamuel.github.io/projects/BranchSCvx/">Branch-SCvx: Branch Successive Convexification</a></b>
     </div>
 </div>
 <br/>
@@ -79,10 +79,10 @@ In the aerospace domain, autonomous systems are typically defined by three core 
 </div>
 <div class="row">
     <div class="col-md mt-3 mt-md-0">
-        <b>[CVG: Constrained Visibility Guidance](https://bucknercsamuel.github.io/projects/CVG/)</b>
+        <b><a href="https://bucknercsamuel.github.io/projects/CVG/">CVG: Constrained Visibility Guidance</a></b>
     </div>
     <div class="col-md mt-3 mt-md-0">
-        <b>[ROS-Based Flight Software for the D3 CubeSat Mission](https://bucknercsamuel.github.io/projects/D3Sat/)</b>
+        <b><a href="https://bucknercsamuel.github.io/projects/D3Sat/">ROS-Based Flight Software for the D3 CubeSat Mission</a></b>
     </div>
 </div>
 <br/><br/>

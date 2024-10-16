@@ -16,13 +16,13 @@ During my undergraduate degree, I worked off-and-on on a project to develop a VT
     <li> Four servo motors for nozzle actuation</li>
 </ol>
 
-<div class="row">
-    <div class="col-md-6 mt-3 mt-md-0">
+<div class="row equal-height-row">
+    <div class="col equal-height-col">
         {% include figure.liquid 
             path="assets/media/projects/hobby/VTOL/models_sw.png"
             loading="eager" class="img-fluid"%}
     </div>
-    <div class="col-md mt-3 mt-md-0">
+    <div class="col equal-height-col">
         {% include figure.liquid 
             path="assets/media/projects/hobby/VTOL/prototype.jpg"
             caption="Test Model Hardware Prototype"

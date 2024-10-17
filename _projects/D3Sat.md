@@ -27,7 +27,7 @@ Between the Spring of 2019 and Fall of 2020 (when I finished my undergraduate de
             caption="D3 Model: Partially Deployed"
             loading="eager" class="img-fluid"%}
     </div>
-    <div class="col-md-6 mt-3 mt-md-0">
+    <div class="col-md-7 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/projects/research/D3Sat/d3_fully_deployed.png"
             caption="D3 Model: Fully Deployed"

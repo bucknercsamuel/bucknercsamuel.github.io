@@ -18,4 +18,4 @@ horizontal: false
 
 <!-- <iframe src="https://drive.google.com/file/d/1rjmnSPFd5NNyWFSDS_ywOUsJEDerAQ4z/preview" width="100%" height="1018"></iframe> -->
 
-<embed src="https://bucknercsamuel.github.io/assets/media/BucknerResume2024.pdf" type="application/pdf" />
+<embed src="https://bucknercsamuel.github.io/assets/media/BucknerResume2024.pdf" type="application/pdf" width="100%" height="1018" />

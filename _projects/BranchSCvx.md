@@ -42,7 +42,7 @@ I have also developed a custom GUI implementation of Branch-SCvx applied to the 
     <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
     <div class="col-md-9 mt-3 mt-md-0">
         {% include video.liquid 
-            path="https://www.youtube.com/embed/Ak2Vc9rGHHw?&autoplay=1&mute=1&loop=1" 
+            path="https://www.youtube.com/embed/Ak2Vc9rGHHw?&autoplay=1&mute=1&loop=1&playlist=Ak2Vc9rGHHw" 
             caption="Netted cage demo" 
             height="300" %}
     </div>

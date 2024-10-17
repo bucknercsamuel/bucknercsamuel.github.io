@@ -16,27 +16,13 @@ During my undergraduate degree, I worked off-and-on on a project to develop a VT
     <li> Four servo motors for nozzle actuation</li>
 </ol>
 
-<!-- <div class="row equal-height-row">
-    <div class="col equal-height-col">
+<div class="row">
+    <div class="col-md-7 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/projects/hobby/VTOL/models_sw.png"
             loading="eager" class="img-fluid"%}
     </div>
-    <div class="col equal-height-col">
-        {% include figure.liquid 
-            path="assets/media/projects/hobby/VTOL/prototype.jpg"
-            caption="Test Model Hardware Prototype"
-            loading="eager" class="img-fluid rounded z-depth-1"%}
-    </div>
-</div> -->
-
-<div style="display: table; width: 100%;">
-    <div style="display: table-cell; vertical-align: top; width: 50%;">
-        {% include figure.liquid 
-            path="assets/media/projects/hobby/VTOL/models_sw.png"
-            loading="eager" class="img-fluid"%}
-    </div>
-    <div style="display: table-cell; vertical-align: top; width: 50%;">
+    <div class="col-md-3 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/projects/hobby/VTOL/prototype.jpg"
             caption="Test Model Hardware Prototype"

@@ -8,10 +8,12 @@ nav_order: 5
 horizontal: false
 ---
 
-<iframe 
+<!-- <iframe 
   src="https://drive.google.com/file/d/1rjmnSPFd5NNyWFSDS_ywOUsJEDerAQ4z/preview" 
   frameBorder="0"
   scrolling="auto"
   height="100%"
   width="100%"
-></iframe>
+></iframe> -->
+
+<iframe src="https://drive.google.com/file/d/1rjmnSPFd5NNyWFSDS_ywOUsJEDerAQ4z/preview" width="640" height="480" allow="autoplay"></iframe>

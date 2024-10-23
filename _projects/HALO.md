@@ -10,6 +10,11 @@ related_publications: true
 
 
 **H**azard **A**ware **L**anding **O**ptimization (**HALO**) presents a combined perception (HALSS) and trajectory planning (Adaptive-DDTO) solution towards contingency planning for landing maneuvers with multiple candidate landing sites. This was an equal contribution research project between coauthor Chris Hayner and myself, published and presented at ICRA 2024 {% cite hayner2023halo %}, where I was primarily responsible for the Adaptive-DDTO algorithm development and implementation.
+<br/><br/>
+    <p style="text-align: center"><b>
+        <a href="https://haynec.github.io/papers/halo_paper/">(Click here for project page)</a>
+    </b></p>
+<br/><br/>
 
 <div class="row">
     <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
@@ -25,7 +30,7 @@ related_publications: true
 Modeling of the Adaptive-DDTO algorithm can be decomposed into three steps:
 <ol>
     <li> Definition of necessary path constraints, boundary conditions and objective for the single-target optimal control problem.</li>
-    <li> Extension to a multi-target scenario with the objective to maximize the time within which all targets are reachable (known in the literature as [Deferred Decision Trajectory Optimization (DDTO)](https://arc.aiaa.org/doi/abs/10.2514/6.2022-1583)).</li>
+    <li> Extension to a multi-target scenario with the objective to maximize the time within which all targets are reachable (known in the literature as [Deferred Decision Trajectory Optimization](https://arc.aiaa.org/doi/abs/10.2514/6.2022-1583) or DDTO).</li>
     <li> Extension to Adaptive-DDTO through an algorithm to adaptively recompute solutions <i>as needed</i> (whenever number of targets falls below an acceptable threshold).</li>
 </ol>
 

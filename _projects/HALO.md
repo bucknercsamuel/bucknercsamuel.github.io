@@ -11,9 +11,12 @@ related_publications: true
 
 **H**azard **A**ware **L**anding **O**ptimization (**HALO**) presents a combined perception (HALSS) and trajectory planning (Adaptive-DDTO) solution towards contingency planning for landing maneuvers with multiple candidate landing sites. This was an equal contribution research project between coauthor Chris Hayner and myself, published and presented at ICRA 2024 {% cite hayner2023halo %}, where I was primarily responsible for the Adaptive-DDTO algorithm development and implementation.
 <br/><br/>
-    <p style="text-align: center;"><b>
-        <a href="https://haynec.github.io/papers/halo_paper/">(Click here for project page)</a>
-    </b></p>
+    <!-- <p style="text-align:center;"><b>
+        <a href="https://haynec.github.io/papers/halo/">(Click here for project page)</a>
+    </b></p> -->
+    <b>
+        <a href="https://haynec.github.io/papers/halo/">(Click here for project page)</a>
+    </b>
 <br/><br/>
 
 <div class="row">

@@ -1,0 +1,69 @@
+{% comment %}
+  Renders one research-showcase row.
+
+  Parameters
+  ----------
+  title         : (required) Title of the work. Linked to project_url.
+  project_url   : (required) URL of the dedicated project page.
+                  Both the title and the "Read more" link point here.
+  description   : (required) Paragraph description of the work.
+  media_path    : (required) Path to a local image / gif / mp4, or an
+                  embed URL (e.g., a YouTube /embed/ link). Image/gif
+                  files are rendered with figure.liquid; everything else
+                  is rendered with video.liquid (which handles both
+                  <video> tags and <iframe> embeds).
+  paper_url     : (optional) URL to the associated paper. If omitted,
+                  the paper link is hidden.
+  media_class   : (optional) CSS class string for the media element.
+  video_height  : (optional) Height in pixels for iframe embeds
+                  (e.g., YouTube). Defaults to 300.
+  image_max_height : (optional) max-height for image/gif media
+                  (e.g., "300px"). Useful to keep rows visually balanced.
+{% endcomment %}
+
+{% assign ext = include.media_path | split: '.' | last | downcase %}
+{% assign image_exts = "png,jpg,jpeg,gif,tiff,webp" | split: "," %}
+{% assign is_image = false %}
+{% for ie in image_exts %}
+  {% if ext == ie %}
+    {% assign is_image = true %}
+  {% endif %}
+{% endfor %}
+
+{% assign video_height = include.video_height | default: 300 %}
+{% assign media_class = include.media_class | default: "img-fluid rounded z-depth-1" %}
+
+<div class="row align-items-center research-showcase-row">
+  <div class="col-md-5 mt-3 mt-md-0">
+    {% if is_image %}
+      {% include figure.liquid
+        path=include.media_path
+        class=media_class
+        max-height=include.image_max_height
+        loading="eager" %}
+    {% else %}
+      {% include video.liquid
+        path=include.media_path
+        class=media_class
+        height=video_height
+        autoplay=true muted=true loop=true controls=true %}
+    {% endif %}
+  </div>
+  <div class="col-md-7 mt-3 mt-md-0">
+    <h4 class="research-showcase-title">
+      <a href="{{ include.project_url }}">{{ include.title }}</a>
+    </h4>
+    <p class="research-showcase-description">{{ include.description }}</p>
+  </div>
+</div>
+
+<div class="row justify-content-center research-showcase-links">
+  <div class="col-auto text-center">
+    {% if include.paper_url %}
+      <a href="{{ include.paper_url }}">📄 Paper</a>
+      &nbsp;·&nbsp;
+    {% endif %}
+    <a href="{{ include.project_url }}">Read more →</a>
+  </div>
+</div>
+<br/>

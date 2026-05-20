@@ -1,7 +1,7 @@
-# this file uses prebuilt image in dockerhub
+# Builds the image locally from the included Dockerfile so the gem set
+# matches this repo's Gemfile (the prebuilt Docker Hub image lags behind).
 services:
   jekyll:
-    image: amirpourmand/al-folio:latest
     build: .
     ports:
       - 8080:8080

@@ -14,75 +14,68 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a fourth-year Ph.D. student in the [Aeronautics & Astronautics Department at the University of Washington](https://www.aa.washington.edu/), working with the [Autonomous Controls Laboratory](https://uwacl.com/) under Dr. Behçet Açıkmeşe. My research interests are divided between developing practical, real-time numerical algorithms and applying them to relevant real-world scenarios in aerospace engineering and, more broadly, in autonomous systems. This constitutes:
+I am a fifth-year Ph.D. student in the [Aeronautics & Astronautics Department at the University of Washington](https://www.aa.washington.edu/), working with the [Autonomous Controls Laboratory](https://uwacl.com/) under Dr. Behçet Açıkmeşe. My research interests are divided between developing practical, real-time numerical algorithms and applying them to relevant real-world scenarios in aerospace engineering and, more broadly, in autonomous systems. Some of my focus areas include:
 
 * **Convex Optimization** *(Convex Approximation Methods)*
 * **Real-Time Trajectory Optimization** *(Sequential Convex Programming)*
 * **Perception-In-The-Loop Planning** *(Active Navigation)*
-* **Primary Applications:**
+* **Application Domains:**
+    * **Robotics:** Multibody Systems, Legged Locomotion
     * **Spaceflight:** Landing Vehicles, Powered Descent Guidance, Relative Orbital Maneuvers
     * **Aeronautics:** Multirotors, eVTOLs
 
-Academically, I graduated *Summa Cum Laude* from the University of Florida with a B.S. in Aerospace Engineering (2020), and am the recipient of both the NSF GRFP and ARCS fellowships for graduate research. Professionally, I have spent six rotations working with [NASA](https://www.nasa.gov/) as a [Pathways Co-Op](https://www.nasa.gov/careers/pathways/), as well as two internships in the spaceflight industry with [Blue Origin](https://www.blueorigin.com/). Have a look through my website to learn more!
+Academically, I graduated *Summa Cum Laude* from the University of Florida with a B.S. in Aerospace Engineering (2020), and am the recipient of both the NSF GRFP and ARCS fellowships for graduate research. My internship experience is divided between [NASA](https://www.nasa.gov/) as a [Pathways Co-Op](https://www.nasa.gov/careers/pathways/) (6x), [Blue Origin](https://www.blueorigin.com/) (2x), [Mitsubishi Electric Research Laboratories](https://www.merl.com/) (1x). Have a look through my website to learn more!
 <br/><br/>
 
-## Experience Overview
+<!-- ## Experience Overview 
 
 In the aerospace domain, autonomous systems are typically defined by three core modules: **guidance** (otherwise known as path planning or feedforward control), **navigation** (referring to state estimation and perception) and **control** (referring to lower-level feedback control), collectively referred to as **GN&C**. My experience spans all three of these fields, as well as more high-level software design for GN&C systems (including simulation and testing).
 
 <div class="row">
-    <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md mt-3 mt-md-0">&nbsp;</div>
     <div class="col-md-9 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/media/experience_overview.png"
             loading="eager" class="img-fluid"%}
     </div>
-    <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
+    <div class="col-md mt-3 mt-md-0">&nbsp;</div>
 </div>
-<br/><br/>
+<br/><br/> -->
 
 ## Research Showcase
 
-<div class="row">
-    <div class="col-md mt-3 mt-md-0">
-        {% include video.liquid 
-            path="https://www.youtube.com/embed/KqCXGDTntDU?&autoplay=1&mute=1&loop=1&playlist=KqCXGDTntDU" 
-            height="300" %}
-    </div>
-    <div class="col-md mt-3 mt-md-0">
-        {% include video.liquid 
-            path="https://www.youtube.com/embed/Ak2Vc9rGHHw?&autoplay=1&mute=1&loop=1&playlist=Ak2Vc9rGHHw" 
-            height="300" %}
-    </div>
-</div>
-<div class="row">
-    <div class="col-md mt-3 mt-md-0">
-        <b><a href="https://bucknercsamuel.github.io/projects/HALO/">HALO: Hazard-Aware Landing Optimization</a></b>
-    </div>
-    <div class="col-md mt-3 mt-md-0">
-        <b><a href="https://bucknercsamuel.github.io/projects/BranchSCvx/">Branch-SCvx: Branch Successive Convexification</a></b>
-    </div>
-</div>
-<br/>
+{% include research_card.liquid
+    title="HALO: Hazard-Aware Landing Optimization"
+    project_url="/projects/HALO/"
+    description="A combined perception (HALSS) and trajectory planning (Adaptive-DDTO) solution for contingency planning in landing maneuvers with multiple candidate landing sites. This was an equal-contribution project with Chris Hayner, published and presented at ICRA 2024, where I led the development of the Adaptive-DDTO algorithm."
+    media_path="https://www.youtube.com/embed/KqCXGDTntDU?&autoplay=1&mute=1&loop=1&playlist=KqCXGDTntDU"
+    paper_url="https://arxiv.org/abs/2304.01583"
+    video_height="300"
+%}
 
-<div class="row">
-    <div class="col-md mt-3 mt-md-0">
-        {% include video.liquid 
-            path="assets/media/projects/research/CVG/cvg_demo.mp4"
-            autoplay=true muted=true loop=true controls=true %}
-    </div>
-    <div class="col-md mt-3 mt-md-0">
-        {% include figure.liquid 
-            path="assets/media/projects/research/D3Sat/SmallSat_Poster.png"
-            loading="eager" class="img-fluid"%}
-    </div>
-</div>
-<div class="row">
-    <div class="col-md mt-3 mt-md-0">
-        <b><a href="https://bucknercsamuel.github.io/projects/CVG/">CVG: Constrained Visibility Guidance</a></b>
-    </div>
-    <div class="col-md mt-3 mt-md-0">
-        <b><a href="https://bucknercsamuel.github.io/projects/D3Sat/">ROS-Based Flight Software for the D3 CubeSat Mission</a></b>
-    </div>
-</div>
-<br/><br/>
+{% include research_card.liquid
+    title="Branch-SCvx: Branched Trajectory Optimization"
+    project_url="/projects/BranchSCvx/"
+    description="A general-purpose method for constructing graphs of trajectory optimization problems, leading to a tractable formulation for contingency planning under unknown multimodal uncertainty. Solved with continuous-time successive convexification (CT-SCvx) for continuous-time constraint satisfaction guarantees, and validated via hardware experiments on quadrotors in a netted cage. Pending submission to T-RO 2025."
+    media_path="https://www.youtube.com/embed/Ak2Vc9rGHHw?&autoplay=1&mute=1&loop=1&playlist=Ak2Vc9rGHHw"
+    video_height="300"
+%}
+
+{% include research_card.liquid
+    title="CVG: Constrained Visibility Guidance"
+    project_url="/projects/CVG/"
+    description="A novel approach to modeling terrain scanning constraints for powered landing maneuvers using a new theory of constrained conic intersections. The work spans both a high-fidelity 6-DoF formulation via sequential convex programming and a 3-DoF formulation via lossless convexification, developed during my 2023 rotation at the NASA Johnson Space Center."
+    media_path="assets/media/projects/research/CVG/cvg_demo.mp4"
+    paper_url="https://arc.aiaa.org/doi/abs/10.2514/6.2024-1759"
+%}
+
+{% include research_card.liquid
+    title="ROS-Based Flight Software for the D3 CubeSat Mission"
+    project_url="/projects/D3Sat/"
+    description="The first flight-ready ROS (Robot Operating System) based flight software for a CubeSat, developed as the lead flight software engineer for the D3 (Drag De-orbit Device) mission. The software supports radio telemetry, GPS navigation, finite-state handling, command processing, onboard updates, and failsafe reboots; D3 was successfully launched in July 2022 and completed all mission requirements in April 2023."
+    media_path="assets/media/projects/research/D3Sat/SmallSat_Poster.png"
+    paper_url="https://digitalcommons.usu.edu/smallsat/2020/all2020/241/"
+    image_max_height="300px"
+%}
+
+<br/>

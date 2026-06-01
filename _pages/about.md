@@ -36,8 +36,8 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
     media_path="assets/media/projects/research/ciSCvx/project_video.mp4"
     paper_url="https://arxiv.org/pdf/2604.09993"
     video_height="300"
-    video_start=60
-    video_end=90
+    video_start=107
+    video_end=167
     video_controls=false
 %}
 

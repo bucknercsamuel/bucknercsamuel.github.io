@@ -7,19 +7,20 @@
   project_url   : (required) URL of the dedicated project page.
   description   : (required) Paragraph description of the work.
   media_path    : (required) Path to a local image / gif / mp4, or a YouTube
-                  /embed/ URL. Images use figure.liquid; video uses video.liquid
-                  or segment-aware markup when video_end is set.
+                  /embed/ URL. Images use figure.liquid; videos are wrapped
+                  for hover-only controls (local) or the YouTube IFrame API.
   paper_url     : (optional) URL to the associated paper.
   code_url      : (optional) URL to a code repository. Renders a GitHub icon link.
   media_class   : (optional) CSS class string for the media element.
   video_height  : (optional) Height in pixels for embeds. Defaults to 300.
-  video_controls: (optional) Show playback controls. Defaults to true. For
-                  YouTube embeds this maps to controls=1/0 in the embed URL.
   video_start   : (optional) Segment start time in seconds. Defaults to 0.
   video_end     : (optional) Segment end time in seconds. When set, the clip
-                  loops from start to end. YouTube segment loops use the
-                  IFrame Player API; local mp4/webm/ogg use HTML5 + JS.
+                  loops from start to end.
   image_max_height : (optional) max-height for image/gif media (e.g., "300px").
+
+  Video controls appear on mouse hover for all video types. YouTube embeds use
+  controls=0 to suppress the default title/UI overlay, with a lightweight
+  custom play/seek bar shown on hover instead.
 {% endcomment %}
 
 {% assign ext = include.media_path | split: '.' | last | downcase %}
@@ -37,11 +38,6 @@
   {% assign youtube_id = include.media_path | split: 'youtube.com/embed/' | last | split: '?' | first | split: '/' | first %}
 {% endif %}
 
-{% assign show_controls = true %}
-{% if include.video_controls == false or include.video_controls == 'false' or include.video_controls == 0 %}
-  {% assign show_controls = false %}
-{% endif %}
-
 {% assign video_height = include.video_height | default: 300 %}
 {% assign media_class = include.media_class | default: "img-fluid rounded z-depth-1" %}
 {% assign video_start = include.video_start | default: 0 %}
@@ -51,12 +47,10 @@
   {% assign video_end = include.video_end %}
 {% endif %}
 
-{% assign needs_segment_js = false %}
-{% if has_segment %}
-  {% unless is_image %}
-    {% assign needs_segment_js = true %}
-  {% endunless %}
-{% endif %}
+{% assign needs_video_js = false %}
+{% unless is_image %}
+  {% assign needs_video_js = true %}
+{% endunless %}
 
 <div class="row align-items-center research-showcase-row">
   <div class="col-md-5 mt-3 mt-md-0">
@@ -66,27 +60,27 @@
         class=media_class
         max-height=include.image_max_height
         loading="eager" %}
-    {% elsif is_youtube and has_segment %}
-      <figure>
+    {% elsif is_youtube %}
+      <figure class="research-card-video-wrap">
         <div
-          class="research-card-youtube-segment {{ media_class }}"
+          class="research-card-youtube {{ media_class }}"
           data-video-id="{{ youtube_id }}"
-          data-start="{{ video_start }}"
-          data-end="{{ video_end }}"
-          data-controls="{% if show_controls %}1{% else %}0{% endif %}"
           data-height="{{ video_height }}"
+          {% if has_segment %}
+            data-start="{{ video_start }}"
+            data-end="{{ video_end }}"
+          {% endif %}
           style="width: 100%; height: {{ video_height }}px;"
         ></div>
+        <div class="research-card-youtube-hover-ui" aria-hidden="true">
+          <button type="button" class="research-card-yt-play" aria-label="Play video">
+            <i class="fa-solid fa-play" aria-hidden="true"></i>
+          </button>
+          <input type="range" class="research-card-yt-seek" min="0" max="100" step="0.1" value="0" aria-label="Seek video">
+        </div>
       </figure>
-    {% elsif is_youtube %}
-      {% capture youtube_embed_url %}https://www.youtube.com/embed/{{ youtube_id }}?autoplay=1&mute=1&loop=1&playlist={{ youtube_id }}&playsinline=1&modestbranding=1&rel=0{% if show_controls %}&controls=1{% else %}&controls=0{% endif %}{% endcapture %}
-      {% include video.liquid
-        path=youtube_embed_url
-        class=media_class
-        height=video_height
-        autoplay=true muted=true loop=true %}
     {% elsif has_segment %}
-      <figure>
+      <figure class="research-card-video-wrap">
         <video
           class="research-card-segment-video {{ media_class }}"
           src="{{ include.media_path | relative_url }}"
@@ -97,16 +91,16 @@
           autoplay
           muted
           playsinline
-          {% if show_controls %}controls{% endif %}
         ></video>
       </figure>
     {% else %}
-      {% include video.liquid
-        path=include.media_path
-        class=media_class
-        height=video_height
-        autoplay=true muted=true loop=true
-        controls=show_controls %}
+      <figure class="research-card-video-wrap">
+        {% include video.liquid
+          path=include.media_path
+          class=media_class
+          height=video_height
+          autoplay=true muted=true loop=true %}
+      </figure>
     {% endif %}
   </div>
   <div class="col-md-7 mt-3 mt-md-0">
@@ -132,7 +126,7 @@
 </div>
 <br/>
 
-{% if needs_segment_js %}
+{% if needs_video_js %}
   <script>
     (function () {
       if (window.__researchCardVideoLoader) {

@@ -36,9 +36,8 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
     media_path="assets/media/projects/research/ciSCvx/project_video.mp4"
     paper_url="https://arxiv.org/pdf/2604.09993"
     video_height="300"
-    video_start=107
-    video_end=167
-    video_controls=false
+    video_start=108
+    video_end=166
 %}
 
 {% include research_card.liquid
@@ -48,7 +47,6 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
     media_path="https://www.youtube.com/embed/KqCXGDTntDU?&autoplay=1&mute=1&loop=1&playlist=KqCXGDTntDU"
     paper_url="https://arxiv.org/abs/2304.01583"
     video_height="300"
-    video_controls=false
 %}
 
 <!-- {% include research_card.liquid
@@ -57,7 +55,6 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
     description="A general-purpose method for constructing graphs of trajectory optimization problems, leading to a tractable formulation for contingency planning under unknown multimodal uncertainty. Solved with continuous-time successive convexification (CT-SCvx) for continuous-time constraint satisfaction guarantees, and validated via hardware experiments on quadrotors in a netted cage. Pending submission to T-RO 2025."
     media_path="https://www.youtube.com/embed/Ak2Vc9rGHHw?&autoplay=1&mute=1&loop=1&playlist=Ak2Vc9rGHHw"
     video_height="300"
-    video_controls=false
 %} -->
 
 {% include research_card.liquid
@@ -66,7 +63,6 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
     description="A novel approach to modeling terrain scanning constraints for powered landing maneuvers using a new theory of constrained conic intersections. The work spans both a high-fidelity 6-DoF formulation via sequential convex programming and a 3-DoF formulation via lossless convexification, developed during my 2023 rotation at the NASA Johnson Space Center."
     media_path="assets/media/projects/research/CVG/cvg_demo.mp4"
     paper_url="https://arc.aiaa.org/doi/abs/10.2514/6.2024-1759"
-    video_controls=false
 %}
 
 {% include research_card.liquid
@@ -76,7 +72,6 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
     media_path="assets/media/projects/research/D3Sat/SmallSat_Poster.png"
     paper_url="https://digitalcommons.usu.edu/smallsat/2020/all2020/241/"
     image_max_height="300px"
-    video_controls=false
 %}
 
 <br/>

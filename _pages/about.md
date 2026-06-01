@@ -16,15 +16,15 @@ social: true # includes social icons at the bottom of the page
 
 I am a fifth-year Ph.D. student in the [Aeronautics & Astronautics Department at the University of Washington](https://www.aa.washington.edu/), working with the [Autonomous Controls Laboratory](https://uwacl.com/) under Dr. Behçet Açıkmeşe. My research interests are divided between developing practical, real-time numerical algorithms and applying them to relevant real-world scenarios in aerospace engineering and, more broadly, in autonomous systems. Some of my focus areas include:
 
-* **Convex Optimization** *(Convex Approximation Methods)*
-* **Real-Time Trajectory Optimization** *(Sequential Convex Programming)*
-* **Perception-In-The-Loop Planning** *(Active Navigation)*
+* **Convex Optimization** *(Convex Approximation Methods, Sequential Convex Programming)*
+* **Real-Time Trajectory Optimization** 
+* **Interaction-Aware Planning** *(Contact-Rich, Perception-In-The-Loop)*
 * **Application Domains:**
     * **Robotics:** Multibody Systems, Legged Locomotion
-    * **Spaceflight:** Landing Vehicles, Powered Descent Guidance, Relative Orbital Maneuvers
+    * **Spaceflight:** Powered Descent Guidance, Relative Orbital Maneuvers
     * **Aeronautics:** Multirotors, eVTOLs
 
-Academically, I graduated *Summa Cum Laude* from the University of Florida with a B.S. in Aerospace Engineering (2020), and am the recipient of both the NSF GRFP and ARCS fellowships for graduate research. My internship experience is divided between [NASA](https://www.nasa.gov/) as a [Pathways Co-Op](https://www.nasa.gov/careers/pathways/) (6x), [Blue Origin](https://www.blueorigin.com/) (2x), [Mitsubishi Electric Research Laboratories](https://www.merl.com/) (1x). Have a look through my website to learn more!
+Academically, I graduated *Summa Cum Laude* from the University of Florida with a B.S. in Aerospace Engineering (2020), and am the recipient of both the NSF GRFP and ARCS fellowships for graduate research. My internship experience is divided between [NASA](https://www.nasa.gov/) as a [Pathways Co-Op](https://www.nasa.gov/careers/pathways/) (6x), [Blue Origin](https://www.blueorigin.com/) (2x), and [Mitsubishi Electric Research Laboratories](https://www.merl.com/) (1x). Have a look through my website to learn more!
 <br/><br/>
 
 ## Research Showcase

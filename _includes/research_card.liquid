@@ -5,20 +5,21 @@
   ----------
   title         : (required) Title of the work. Linked to project_url.
   project_url   : (required) URL of the dedicated project page.
-                  Both the title and the "Read more" link point here.
   description   : (required) Paragraph description of the work.
-  media_path    : (required) Path to a local image / gif / mp4, or an
-                  embed URL (e.g., a YouTube /embed/ link). Image/gif
-                  files are rendered with figure.liquid; everything else
-                  is rendered with video.liquid (which handles both
-                  <video> tags and <iframe> embeds).
-  paper_url     : (optional) URL to the associated paper. If omitted,
-                  the paper link is hidden.
+  media_path    : (required) Path to a local image / gif / mp4, or a YouTube
+                  /embed/ URL. Images use figure.liquid; video uses video.liquid
+                  or segment-aware markup when video_end is set.
+  paper_url     : (optional) URL to the associated paper.
+  code_url      : (optional) URL to a code repository. Renders a GitHub icon link.
   media_class   : (optional) CSS class string for the media element.
-  video_height  : (optional) Height in pixels for iframe embeds
-                  (e.g., YouTube). Defaults to 300.
-  image_max_height : (optional) max-height for image/gif media
-                  (e.g., "300px"). Useful to keep rows visually balanced.
+  video_height  : (optional) Height in pixels for embeds. Defaults to 300.
+  video_controls: (optional) Show playback controls. Defaults to true. For
+                  YouTube embeds this maps to controls=1/0 in the embed URL.
+  video_start   : (optional) Segment start time in seconds. Defaults to 0.
+  video_end     : (optional) Segment end time in seconds. When set, the clip
+                  loops from start to end. YouTube segment loops use the
+                  IFrame Player API; local mp4/webm/ogg use HTML5 + JS.
+  image_max_height : (optional) max-height for image/gif media (e.g., "300px").
 {% endcomment %}
 
 {% assign ext = include.media_path | split: '.' | last | downcase %}
@@ -30,8 +31,32 @@
   {% endif %}
 {% endfor %}
 
+{% assign is_youtube = false %}
+{% if include.media_path contains 'youtube.com/embed/' %}
+  {% assign is_youtube = true %}
+  {% assign youtube_id = include.media_path | split: 'youtube.com/embed/' | last | split: '?' | first | split: '/' | first %}
+{% endif %}
+
+{% assign show_controls = true %}
+{% if include.video_controls == false or include.video_controls == 'false' or include.video_controls == 0 %}
+  {% assign show_controls = false %}
+{% endif %}
+
 {% assign video_height = include.video_height | default: 300 %}
 {% assign media_class = include.media_class | default: "img-fluid rounded z-depth-1" %}
+{% assign video_start = include.video_start | default: 0 %}
+{% assign has_segment = false %}
+{% if include.video_end %}
+  {% assign has_segment = true %}
+  {% assign video_end = include.video_end %}
+{% endif %}
+
+{% assign needs_segment_js = false %}
+{% if has_segment %}
+  {% unless is_image %}
+    {% assign needs_segment_js = true %}
+  {% endunless %}
+{% endif %}
 
 <div class="row align-items-center research-showcase-row">
   <div class="col-md-5 mt-3 mt-md-0">
@@ -41,12 +66,47 @@
         class=media_class
         max-height=include.image_max_height
         loading="eager" %}
+    {% elsif is_youtube and has_segment %}
+      <figure>
+        <div
+          class="research-card-youtube-segment {{ media_class }}"
+          data-video-id="{{ youtube_id }}"
+          data-start="{{ video_start }}"
+          data-end="{{ video_end }}"
+          data-controls="{% if show_controls %}1{% else %}0{% endif %}"
+          data-height="{{ video_height }}"
+          style="width: 100%; height: {{ video_height }}px;"
+        ></div>
+      </figure>
+    {% elsif is_youtube %}
+      {% capture youtube_embed_url %}https://www.youtube.com/embed/{{ youtube_id }}?autoplay=1&mute=1&loop=1&playlist={{ youtube_id }}&playsinline=1&modestbranding=1&rel=0{% if show_controls %}&controls=1{% else %}&controls=0{% endif %}{% endcapture %}
+      {% include video.liquid
+        path=youtube_embed_url
+        class=media_class
+        height=video_height
+        autoplay=true muted=true loop=true %}
+    {% elsif has_segment %}
+      <figure>
+        <video
+          class="research-card-segment-video {{ media_class }}"
+          src="{{ include.media_path | relative_url }}"
+          data-segment-start="{{ video_start }}"
+          data-segment-end="{{ video_end }}"
+          width="100%"
+          height="auto"
+          autoplay
+          muted
+          playsinline
+          {% if show_controls %}controls{% endif %}
+        ></video>
+      </figure>
     {% else %}
       {% include video.liquid
         path=include.media_path
         class=media_class
         height=video_height
-        autoplay=true muted=true loop=true controls=true %}
+        autoplay=true muted=true loop=true
+        controls=show_controls %}
     {% endif %}
   </div>
   <div class="col-md-7 mt-3 mt-md-0">
@@ -61,9 +121,28 @@
   <div class="col-auto text-center">
     {% if include.paper_url %}
       <a href="{{ include.paper_url }}">📄 Paper</a>
-      &nbsp;·&nbsp;
     {% endif %}
+    {% if include.code_url %}
+      {% if include.paper_url %}&nbsp;·&nbsp;{% endif %}
+      <a href="{{ include.code_url }}"><i class="fa-brands fa-github"></i> Code</a>
+    {% endif %}
+    {% if include.paper_url or include.code_url %}&nbsp;·&nbsp;{% endif %}
     <a href="{{ include.project_url }}">Read more →</a>
   </div>
 </div>
 <br/>
+
+{% if needs_segment_js %}
+  <script>
+    (function () {
+      if (window.__researchCardVideoLoader) {
+        return;
+      }
+      window.__researchCardVideoLoader = true;
+      var script = document.createElement("script");
+      script.src = "{{ '/assets/js/research-card-video.js' | relative_url | bust_file_cache }}";
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  </script>
+{% endif %}

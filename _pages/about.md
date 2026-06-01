@@ -27,21 +27,6 @@ I am a fifth-year Ph.D. student in the [Aeronautics & Astronautics Department at
 Academically, I graduated *Summa Cum Laude* from the University of Florida with a B.S. in Aerospace Engineering (2020), and am the recipient of both the NSF GRFP and ARCS fellowships for graduate research. My internship experience is divided between [NASA](https://www.nasa.gov/) as a [Pathways Co-Op](https://www.nasa.gov/careers/pathways/) (6x), [Blue Origin](https://www.blueorigin.com/) (2x), [Mitsubishi Electric Research Laboratories](https://www.merl.com/) (1x). Have a look through my website to learn more!
 <br/><br/>
 
-<!-- ## Experience Overview 
-
-In the aerospace domain, autonomous systems are typically defined by three core modules: **guidance** (otherwise known as path planning or feedforward control), **navigation** (referring to state estimation and perception) and **control** (referring to lower-level feedback control), collectively referred to as **GN&C**. My experience spans all three of these fields, as well as more high-level software design for GN&C systems (including simulation and testing).
-
-<div class="row">
-    <div class="col-md mt-3 mt-md-0">&nbsp;</div>
-    <div class="col-md-9 mt-3 mt-md-0">
-        {% include figure.liquid 
-            path="assets/media/experience_overview.png"
-            loading="eager" class="img-fluid"%}
-    </div>
-    <div class="col-md mt-3 mt-md-0">&nbsp;</div>
-</div>
-<br/><br/> -->
-
 ## Research Showcase
 
 {% include research_card.liquid

@@ -54,7 +54,7 @@ The problem of guidance-navigation co-design for autonomous aerospace systems co
 <div class="row">
     <div class="col-md mt-3 mt-md-0">&nbsp;</div>
     <div class="col-md-9 mt-3 mt-md-0">
-        {% include video.liquid
+        {% include figure.liquid
             path="assets/media/projects/research/ACTSLAM/samuel_et_al_award.jpg"
             caption="Photo of me winning the best paper award (GNC Student Paper Competition) at SciTech."
             loading="eager"

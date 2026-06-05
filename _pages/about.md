@@ -52,7 +52,6 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
     project_url="/projects/actslam/"
     description="A general-purpose method for constructing graphs of trajectory optimization problems, leading to a tractable formulation for contingency planning under unknown multimodal uncertainty. The resulting technique demonstrates substantial solve-time improvements relative to its predecessor, along with improved success rates for quadrotor landing in hazardous terrain conditions and hardware experiments to further validate the approach."
     media_path="assets/media/projects/research/GraphSCvx/flight_test_results.mp4"
-    <!-- paper_url="https://arxiv.org/pdf/2604.09993" -->
     video_height="300"
 %}
 

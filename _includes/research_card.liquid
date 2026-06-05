@@ -10,7 +10,10 @@
   media_path    : (required) Path to a local image / gif / mp4, or a YouTube
                   /embed/ URL. Images use figure.liquid; videos are wrapped
                   for hover-only controls (local) or the YouTube IFrame API.
-  paper_url     : (optional) URL to the associated paper.
+  paper_url     : (optional) External URL to the associated paper.
+  manuscript_path : (optional) Repo path to a local manuscript PDF (e.g.
+                  assets/media/projects/research/foo/manuscript.pdf).
+                  Takes precedence over paper_url when both are set.
   code_url      : (optional) URL to a code repository. Renders a GitHub icon link.
   media_class   : (optional) CSS class string for the media element.
   video_height  : (optional) Height in pixels for embeds. Defaults to 300.
@@ -30,6 +33,13 @@
 {% else %}
   {% assign project_href = include.project_url | relative_url %}
   {% assign project_external = false %}
+{% endif %}
+
+{% assign paper_href = nil %}
+{% if include.manuscript_path %}
+  {% assign paper_href = include.manuscript_path | relative_url %}
+{% elsif include.paper_url %}
+  {% assign paper_href = include.paper_url %}
 {% endif %}
 
 {% assign ext = include.media_path | split: '.' | last | downcase %}
@@ -116,20 +126,20 @@
     <h4 class="research-showcase-title">
       <a href="{{ project_href }}"{% if project_external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ include.title }}</a>
     </h4>
-    <p class="research-showcase-description">{{ include.description }}</p>
+    <div class="research-showcase-description">{{ include.description | markdownify }}</div>
   </div>
 </div>
 
 <div class="row justify-content-center research-showcase-links">
   <div class="col-auto text-center">
-    {% if include.paper_url %}
-      <a href="{{ include.paper_url }}">📄 Paper</a>
+    {% if paper_href %}
+      <a href="{{ paper_href }}"{% if include.manuscript_path %} target="_blank" rel="noopener noreferrer"{% endif %}>📄 Paper</a>
     {% endif %}
     {% if include.code_url %}
-      {% if include.paper_url %}&nbsp;·&nbsp;{% endif %}
+      {% if paper_href %}&nbsp;·&nbsp;{% endif %}
       <a href="{{ include.code_url }}"><i class="fa-brands fa-github"></i> Code</a>
     {% endif %}
-    {% if include.paper_url or include.code_url %}&nbsp;·&nbsp;{% endif %}
+    {% if paper_href or include.code_url %}&nbsp;·&nbsp;{% endif %}
     <a href="{{ project_href }}"{% if project_external %} target="_blank" rel="noopener noreferrer"{% endif %}>Read more →</a>
   </div>
 </div>

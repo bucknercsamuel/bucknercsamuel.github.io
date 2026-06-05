@@ -41,16 +41,16 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
 {% include research_card.liquid
     title="ACT-SLAM: Active Continuous-Time SLAM"
     project_url="/projects/actslam/"
-    description="An extension on the well-known active SLAM problem to continuous-time optimal control using stochastic trajectory optimization modeling, with demonstrated reliability and improvements over benchmark methods on a lunar landing challenge problem. This work received Best Paper in the GNC Graduate Student Paper Competition at SciTech 2026--(https://www.aa.washington.edu/news/article/2026-02-17/grad-student-samuel-buckner-wins-aiaa-gnc-best-paper-award)[read here] to learn more."
+    description="An extension on the well-known active SLAM problem to continuous-time optimal control using stochastic trajectory optimization modeling, with demonstrated reliability and improvements over benchmark methods on a lunar landing challenge problem. This work received Best Paper in the GNC Graduate Student Paper Competition at SciTech 2026—[read here](https://www.aa.washington.edu/news/article/2026-02-17/grad-student-samuel-buckner-wins-aiaa-gnc-best-paper-award) to learn more."
     media_path="assets/media/projects/research/ACTSLAM/demo.mp4"
-    paper_url="https://arxiv.org/pdf/2604.09993"
+    manuscript_path="assets/media/projects/research/ACTSLAM/manuscript.pdf"
     video_height="300"
 %}
 
 {% include research_card.liquid
     title="Graph-SCvx: Graph Successive Convexification"
     project_url="/projects/actslam/"
-    description="A general-purpose method for constructing graphs of trajectory optimization problems, leading to a tractable formulation for contingency planning under unknown multimodal uncertainty. The resulting technique demonstrates substantial solve-time improvements relative to its predecessor, along with improved success rates for quadrotor landing in hazardous terrain conditions and hardware experiments to further validate the approach."
+    description="A general-purpose method for constructing graphs of trajectory optimization problems, leading to a tractable formulation for contingency planning under unknown multimodal uncertainty. The resulting technique demonstrates substantial solve-time improvements relative to its predecessor, along with improved success rates for quadrotor landing in hazardous terrain conditions and hardware experiments to further validate the approach (not yet accepted for distribution)."
     media_path="assets/media/projects/research/GraphSCvx/flight_test_results.mp4"
     video_height="300"
 %}
@@ -60,7 +60,7 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
     project_url="/projects/set_containment/"
     description="A novel approach to modeling terrain scanning constraints for powered landing maneuvers using a new theory of constrained conic intersections. The work spans both a high-fidelity 6-DoF formulation via sequential convex programming and a 3-DoF formulation via lossless convexification, developed in part during work rotations at NASA Johnson Space Center."
     media_path="assets/media/projects/research/set_containment/demo.mp4"
-    paper_url="https://arc.aiaa.org/doi/abs/10.2514/6.2024-1759"
+    manuscript_path="assets/media/projects/research/set_containment/manuscript.pdf"
 %}
 
 {% include research_card.liquid

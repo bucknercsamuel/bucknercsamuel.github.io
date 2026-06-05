@@ -68,7 +68,7 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
 
 {% include research_card.liquid
     title="HALO: Hazard-Aware Landing Optimization"
-    project_url="haynec.github.io/papers/halo/"
+    project_url="https://haynec.github.io/papers/halo/"
     description="A combined perception (HALSS) and trajectory planning (Adaptive-DDTO) solution for contingency planning in landing maneuvers with multiple candidate landing sites. This was an equal-contribution project with Chris Hayner, published and presented at ICRA 2023, where I led the development of the Adaptive-DDTO algorithm."
     media_path="https://www.youtube.com/embed/KqCXGDTntDU?&autoplay=1&mute=1&loop=1&playlist=KqCXGDTntDU"
     paper_url="https://arxiv.org/abs/2304.01583"

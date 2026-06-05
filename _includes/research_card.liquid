@@ -4,7 +4,8 @@
   Parameters
   ----------
   title         : (required) Title of the work. Linked to project_url.
-  project_url   : (required) URL of the dedicated project page.
+  project_url   : (required) Internal path (e.g. /projects/foo/) or external URL
+                  (must include https://).
   description   : (required) Paragraph description of the work.
   media_path    : (required) Path to a local image / gif / mp4, or a YouTube
                   /embed/ URL. Images use figure.liquid; videos are wrapped
@@ -22,6 +23,14 @@
   controls=0 to suppress the default title/UI overlay, with a lightweight
   custom play/seek bar shown on hover instead.
 {% endcomment %}
+
+{% if include.project_url contains '://' %}
+  {% assign project_href = include.project_url %}
+  {% assign project_external = true %}
+{% else %}
+  {% assign project_href = include.project_url | relative_url %}
+  {% assign project_external = false %}
+{% endif %}
 
 {% assign ext = include.media_path | split: '.' | last | downcase %}
 {% assign image_exts = "png,jpg,jpeg,gif,tiff,webp" | split: "," %}
@@ -105,7 +114,7 @@
   </div>
   <div class="col-md-7 mt-3 mt-md-0">
     <h4 class="research-showcase-title">
-      <a href="{{ include.project_url }}">{{ include.title }}</a>
+      <a href="{{ project_href }}"{% if project_external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ include.title }}</a>
     </h4>
     <p class="research-showcase-description">{{ include.description }}</p>
   </div>
@@ -121,7 +130,7 @@
       <a href="{{ include.code_url }}"><i class="fa-brands fa-github"></i> Code</a>
     {% endif %}
     {% if include.paper_url or include.code_url %}&nbsp;·&nbsp;{% endif %}
-    <a href="{{ include.project_url }}">Read more →</a>
+    <a href="{{ project_href }}"{% if project_external %} target="_blank" rel="noopener noreferrer"{% endif %}>Read more →</a>
   </div>
 </div>
 <br/>

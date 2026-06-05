@@ -1,4 +1,5 @@
 ---
+published: false
 layout: page
 title: HALO (Hazard-Aware Landing Optimization)
 description: ICRA 2023

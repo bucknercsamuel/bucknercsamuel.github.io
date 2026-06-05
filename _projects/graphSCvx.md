@@ -22,7 +22,31 @@ related_publications: true
 
 ### Abstract
 
-<!-- TODO: add abstract body -->
+Autonomous exploration in unknown and dynamic
+environments poses many challenges for the design of safe and re-
+liable path planning algorithms. In such a scenario with multiple
+candidate objectives, an agent may prefer to defer the decision
+to commit to any particular objective until more information
+can be gathered. In this work, we propose a graph-based trajec-
+tory optimization formulation–graph successive convexification
+(Graph-SCvx)–and show how Graph-SCvx can be used to solve
+the deferred-decision trajectory optimization (DDTO) problem
+in real-time for various robotic tasks. The resulting Graph-
+DDTO model maximizes the duration for which reachability
+is maintained to a collection of target states, and is capable
+of flexible nonconvex path constraint specification building on
+the continuous-time successive convexification formulation. We
+demonstrate Graph-DDTO against a predecessor algorithm in
+a cluttered obstacle avoidance scenario for quadrotor flight,
+showing up to a 19× solve-time improvement. We then demon-
+strate Graph-DDTO’s efficacy in the autonomous soft landing
+problem, where a quadrotor must safely descend and land on
+unknown and hazardous terrain with perception-in-the-loop;
+Graph-DDTO outperforms benchmark comparison algorithms
+while achieving ≥ 95% success rate in all test environments.
+Finally, we perform quadrotor hardware demonstrations with dy-
+namic remote-controlled ground obstacles to demonstrate Graph-
+DDTO’s suitability for onboard implementation.
 
 <div class="row">
     <div class="col-md mt-3 mt-md-0">&nbsp;</div>

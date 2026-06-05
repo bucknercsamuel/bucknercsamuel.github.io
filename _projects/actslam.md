@@ -2,7 +2,7 @@
 layout: page
 title: "ACT-SLAM: Active Continuous-Time SLAM for Powered Descent Guidance Maneuvers"
 description: SciTech 2026 (Best Paper, GNC Student Paper Competition)
-img: assets/img/publication_preview/buckner2026actslam.PNG
+img: assets/img/publication_preview/buckner2026actslam.png
 importance: 1
 category: Research
 related_publications: true

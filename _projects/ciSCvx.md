@@ -2,7 +2,7 @@
 layout: page
 title: "CI-SCvx: Contact-Implicit Successive Convexification for Legged Locomotion"
 description: ICRA 2026
-img: assets/img/publication_preview/buckner2026ciscvx.PNG
+img: assets/img/publication_preview/buckner2026ciscvx.png
 importance: 1
 category: Research
 related_publications: true

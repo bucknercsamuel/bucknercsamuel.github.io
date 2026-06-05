@@ -33,11 +33,9 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
     title="CI-SCvx: Contact-Implicit Successive Convexification"
     project_url="/projects/ciscvx/"
     description="TODO."
-    media_path="assets/media/projects/research/ciSCvx/project_video.mp4"
+    media_path="assets/media/projects/research/ciSCvx/demo.mp4"
     paper_url="https://arxiv.org/pdf/2604.09993"
     video_height="300"
-    video_start=108
-    video_end=166
 %}
 
 {% include research_card.liquid

@@ -41,6 +41,32 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
 %}
 
 {% include research_card.liquid
+    title="ACT-SLAM: Active Continuous-Time SLAM"
+    project_url="/projects/actslam/"
+    description="TODO."
+    media_path="assets/media/projects/research/ACTSLAM/demo.mp4"
+    paper_url="https://arxiv.org/pdf/2604.09993"
+    video_height="300"
+%}
+
+{% include research_card.liquid
+    title="Graph-SCvx: Graph Successive Convexification"
+    project_url="/projects/actslam/"
+    description="TODO."
+    media_path="assets/media/projects/research/GraphSCvx/flight_test_results.mp4"
+    paper_url="https://arxiv.org/pdf/2604.09993"
+    video_height="300"
+%}
+
+{% include research_card.liquid
+    title="Perceptive Set Containment for Powered Descent Guidance"
+    project_url="/projects/set_containment/"
+    description="A novel approach to modeling terrain scanning constraints for powered landing maneuvers using a new theory of constrained conic intersections. The work spans both a high-fidelity 6-DoF formulation via sequential convex programming and a 3-DoF formulation via lossless convexification, developed during my 2023 rotation at the NASA Johnson Space Center."
+    media_path="assets/media/projects/research/set_containment/demo.mp4"
+    paper_url="https://arc.aiaa.org/doi/abs/10.2514/6.2024-1759"
+%}
+
+{% include research_card.liquid
     title="HALO: Hazard-Aware Landing Optimization"
     project_url="haynec.github.io/papers/halo/"
     description="A combined perception (HALSS) and trajectory planning (Adaptive-DDTO) solution for contingency planning in landing maneuvers with multiple candidate landing sites. This was an equal-contribution project with Chris Hayner, published and presented at ICRA 2023, where I led the development of the Adaptive-DDTO algorithm."
@@ -56,14 +82,6 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
     media_path="https://www.youtube.com/embed/Ak2Vc9rGHHw?&autoplay=1&mute=1&loop=1&playlist=Ak2Vc9rGHHw"
     video_height="300"
 %} -->
-
-{% include research_card.liquid
-    title="CVG: Constrained Visibility Guidance"
-    project_url="/projects/CVG/"
-    description="A novel approach to modeling terrain scanning constraints for powered landing maneuvers using a new theory of constrained conic intersections. The work spans both a high-fidelity 6-DoF formulation via sequential convex programming and a 3-DoF formulation via lossless convexification, developed during my 2023 rotation at the NASA Johnson Space Center."
-    media_path="assets/media/projects/research/CVG/cvg_demo.mp4"
-    paper_url="https://arc.aiaa.org/doi/abs/10.2514/6.2024-1759"
-%}
 
 {% include research_card.liquid
     title="ROS-Based Flight Software for the D3 CubeSat Mission"

@@ -31,7 +31,7 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
 
 {% include research_card.liquid
     title="CI-SCvx: Contact-Implicit Successive Convexification"
-    project_url="/projects/ciscvx/"
+    project_url="/projects/ciSCvx/"
     description="A new approach to contact-implicit trajectory optimization (CITO) using integrator states to exactly encode contact modalities on sparse optimization time grids, developed partially during my internship at MERL. This includes a general-purpose Python toolbox customized for CITO problems with GPU acceleration using the JAX library, and has been deployed on notable locomotion challenge problems in high-fidelity physics simulators."
     media_path="assets/media/projects/research/ciSCvx/demo.mp4"
     paper_url="https://arxiv.org/pdf/2604.09993"
@@ -49,8 +49,8 @@ Academically, I graduated *Summa Cum Laude* from the University of Florida with 
 
 {% include research_card.liquid
     title="Graph-SCvx: Graph Successive Convexification"
-    project_url="/projects/actslam/"
-    description="A general-purpose method for constructing graphs of trajectory optimization problems, leading to a tractable formulation for contingency planning under unknown multimodal uncertainty. The resulting technique demonstrates substantial solve-time improvements relative to its predecessor, along with improved success rates for quadrotor landing in hazardous terrain conditions and hardware experiments to further validate the approach (not yet accepted for distribution)."
+    project_url="/projects/graphSCvx/"
+    description="A general-purpose method for constructing graphs of trajectory optimization problems, leading to a tractable formulation for contingency planning under unknown multimodal uncertainty. The resulting technique demonstrates substantial solve-time improvements relative to its predecessor, along with improved success rates for quadrotor landing in hazardous terrain conditions and hardware experiments to further validate the approach (manuscript not yet approved for distribution)."
     media_path="assets/media/projects/research/GraphSCvx/flight_test_results.mp4"
     video_height="300"
 %}

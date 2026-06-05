@@ -46,7 +46,7 @@ Graph-DDTO outperforms benchmark comparison algorithms
 while achieving ≥ 95% success rate in all test environments.
 Finally, we perform quadrotor hardware demonstrations with dy-
 namic remote-controlled ground obstacles to demonstrate Graph-
-DDTO’s suitability for onboard implementation.
+DDTO’s suitability for onboard implementation.{% cite buckner2026graphscvx %}
 
 <div class="row">
     <div class="col-md mt-3 mt-md-0">&nbsp;</div>

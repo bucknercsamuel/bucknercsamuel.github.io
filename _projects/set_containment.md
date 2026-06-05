@@ -32,7 +32,7 @@ Both of these models were developed as part of my 2023 rotation at the NASA John
     </div>
     <div class="col-md mt-3 mt-md-0">
         {% include figure.liquid 
-            path="assets/media/projects/research/CVG/CVG_illustration.png"
+            path="assets/media/projects/research/set_containment/CVG_illustration.png"
             caption="Diagram visually showing the main theoretical result"
             loading="eager" class="img-fluid rounded z-depth-1"%}
     </div>
@@ -42,7 +42,7 @@ Both of these models were developed as part of my 2023 rotation at the NASA John
     <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
     <div class="col-md-9 mt-3 mt-md-0">
         {% include video.liquid 
-            path="assets/media/projects/research/CVG/cvg_demo.mp4"
+            path="assets/media/projects/research/set_containment/cvg_demo.mp4"
             caption="CVG demo of a landing maneuver with three terrain scanning events (for three separate regions of interest)"
             autoplay=true muted=true loop=true controls=true %}
     </div>
@@ -60,7 +60,7 @@ It can be shown that this set, defined as the **C**ontrol **R**obust **E**nvelop
     <div class="col-md mt-3 mt-md-0">&nbsp;</div> <!-- empty space -->
     <div class="col-md-7 mt-3 mt-md-0">
         {% include figure.liquid 
-            path="assets/media/projects/research/CVG/CRE.png"
+            path="assets/media/projects/research/set_containment/CRE.png"
             caption="Geometric visualization of the CRE -- the blue cone represents the positional constraint, and the orange cone represents the thrust constraint. The green cone represents the vehicle's FOV cone."
             loading="eager" class="img-fluid rounded z-depth-1"%}
     </div>

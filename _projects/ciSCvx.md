@@ -51,7 +51,7 @@ trajectories with lesser energy consumption. We also show
 that the resulting software achieves faster solve times than
 existing state-of-the-art SCP implementations by over an order
 of magnitude, thereby demonstrating a practically important
-contribution to scalable real-time trajectory optimization.
+contribution to scalable real-time trajectory optimization.{% cite buckner2026ciscvx %}
 
 <div class="row">
     <div class="col-md mt-3 mt-md-0">&nbsp;</div>
